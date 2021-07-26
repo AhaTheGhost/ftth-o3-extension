@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <img src="images/FTTH_logo.png" alt="FTTH logo" />
+    <h2>Easy ticket management</h2>
+
+    <p>General</p>
+    <input id="OTnum" type="number" min="1" max="50" value="5" />
+    Open from:
+    <input id="top" name="filterType" type="radio" value="top" checked="" />Top
+    <input id="bottom" name="filterType" type="radio" value="Bottom"  /> Bottom
+    <!-- <input class="btn" id="openAllNonLocked" type="button" value="Open Non-Locked" style="margin-top: 5px" disabled="" /> -->
+    <input class="btn" id="openAll" type="button" value="Open All" style="margin-top: 5px" />
+    <!-- <input class="btn" id="openBO" type="button" value="Open BO" style="margin-top: 5px" disabled="" /> -->
+
+    <p>New Installation</p>
+    <input class="btn" id="openAllNew" type="button" value="Open all" />
+    <input class="btn" id="openBoldNew" type="button" value="Open bold" />
+
+    <p>Maintainance</p>
+    <input class="btn" id="openAllMain" type="button" value="Open all" />
+    <input class="btn" id="openBoldMain" type="button" value="Open bold" />
+
+    <hr />
+
+    <p>Package upgrade calculator</p>
+    From
+    <select id="pkgFrom">
+      <option value="20">20K - Res</option>
+      <option value="25">25K - Res</option>
+      <option value="29">29K - Res</option>
+      <option value="39">39K - Res</option>
+      <option value="59">59K - Res</option>
+      <option value="149">149K - Corp</option>
+      <option value="249">249K - Corp</option>
+    </select>
+
+    To
+    <select id="pkgTo">
+      <option value="39">39K - Res</option>
+      <option value="59">59K - Res</option>
+      <option value="149">149K - Corp</option>
+      <option value="249">249K - Corp</option>
+      <option value="449">449K - Corp</option>
+    </select>
+    Rem days:
+    <input id="remDays" type="number" min="1" max="999" value="5" style="margin-top: 5px; width: 38px;" />
+    <label id="remDaysLabel" style="margin-top: 5px" >Upgrades to: 33 days</label>
+
+    <hr />
+
+    <p>SIP cancellation</p>
+    SIP:
+    <input id="canSIP" type="text" placeholder="ex: 0661234567" style="width: 92px;" minlength="9" maxlength="10" />
+    Ticket #
+    <input id="canTicket" type="text" placeholder="ex: 123456" style="width: 65px;" minlength="6" maxlength="6" />
+    <input class="btn" id="cancel" style="margin-top: 5px" type="button" value="Cancel SIP" />
+
+    <br />
+    <br />
+    <span class="ver center">v 1.0.3.7</span>
+
+    <script src="js/popup.js"></script>
+  </body>
+</html>
