@@ -27,7 +27,7 @@
     "matches": [
         "<all_urls>"
     ],
-    "js": ["js/ticket.js", "js/required/html2canvas.min.js"],
+    "js": "js/ticket.js",
     "run_at": "document_end"
 }],
   "background": {
